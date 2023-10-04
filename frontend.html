@@ -1,0 +1,67 @@
+<html>
+<head>
+  <title>Business Plan Builder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .form-group button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Business Plan Builder</h1>
+    <form id="business-plan-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="investment-amount">Investment Amount:</label>
+        <input type="number" id="investment-amount" name="investment-amount" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Build Business Plan</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('business-plan-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var name = document.getElementById('name').value;
+      var investmentAmount = document.getElementById('investment-amount').value;
+      // TODO: Implement form submission logic
+    });
+  </script>
+</body>
+</html>
