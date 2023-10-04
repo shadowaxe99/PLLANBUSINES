@@ -1,0 +1,4 @@
+Test Report
+
+Test Scenario: Test Scenario 1 - Outcome: False
+Test Scenario: Test Scenario 2 - Outcome: True
